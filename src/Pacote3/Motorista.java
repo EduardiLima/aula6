@@ -1,7 +1,6 @@
 package Pacote3;
 
-public class Motorista {
-    private String nome;
+public class Motorista extends Pessoa {
     private int matricula;
     private Carro veiculoAtual;
 
@@ -13,17 +12,13 @@ public class Motorista {
         this.veiculoAtual = veiculoAtual;
     }
 
+    public Motorista() { }
+
     public Motorista(String nome, int matricula) {
         this.nome = nome;
         this.matricula = matricula;
     }
 
-    public String getNome() {
-        return nome;
-    }
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
     public int getMatricula() {
         return matricula;
     }
