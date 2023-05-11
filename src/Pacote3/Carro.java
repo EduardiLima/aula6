@@ -37,7 +37,7 @@ public class Carro {
             this.letrasPlaca = placa.substring(0, 3); //ABC
             this.numerosPlaca = Integer.parseInt(placa.substring(3)); //1234
         } else {
-            this.letrasPlaca = "ERRO!!!";
+            throw new ImputMismatchExcepition("Os 4 ultimos caracteres precisam ser numéricos");
         }
     }
     
